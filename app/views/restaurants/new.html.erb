@@ -1,1 +1,11 @@
 <h1>Form to create new restaurant page</h1>
+
+<%= simple_form_for(@restaurant) do |input| %>
+  <%= input.label :name %>
+  <%= input.text_field :name %>
+  <%= input.label :address %>
+  <%= input.text_field :address %>
+  <%= input.label :category %>
+  <%= input.text_field :category %>
+  <%= input.submit %>
+<% end %>

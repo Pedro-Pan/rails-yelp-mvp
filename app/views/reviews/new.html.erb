@@ -1,1 +1,11 @@
 <h1>Review form page, to create new reviews</h1>
+
+[@restaurant, @review]
+
+<%= simple_form_for [@restaurant, @review] do |input| %>
+  <%= input.label :content %>
+  <%= input.text_field :content %>
+  <%= input.label :rating %>
+  <%= input.input :rating %>
+  <%= input.submit %>
+<% end %>
